@@ -1,0 +1,24 @@
+{
+    "name": "nagoyaphp/vol10",
+    "description":" ",
+    "keywords":[
+    ],
+    "license": "MIT",
+    "autoload":{
+        "psr-4":{
+            "NagoyaPHP\\Vol10\\": "src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "NagoyaPHP\\Vol10\\": ["tests/", "tests/Fake"]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}
