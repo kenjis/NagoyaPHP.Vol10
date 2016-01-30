@@ -6,6 +6,8 @@
  */
 namespace NagoyaPHP\Vol10;
 
+use NagoyaPHP\Vol10\Exception\RuntimeException;
+
 class Seats
 {
     private $count = 0;
@@ -67,6 +69,6 @@ class Seats
             }
         }
 
-        throw new \Exception('Can not find empty seat: ' . $str);
+        throw new RuntimeException('Can not find empty seat for "'.$str.'"');
     }
 }

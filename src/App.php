@@ -13,11 +13,16 @@ class App
         $inputArray = $this->parseInput($input);
 
         $seats = new Seats($inputArray['seatCount']);
-        $count = strlen($inputArray['queueStr']);
-        for ($i = 0; $i < $count; $i++) {
-            $seats->processString($inputArray['queueStr'][$i]);
+
+        foreach (str_split($inputArray['queueStr']) as $str) {
+            $seats->processString($str);
         }
 
+        return $this->formatOutput($seats);
+    }
+
+    public function formatOutput(Seats $seats)
+    {
         $output = '';
         foreach ($seats->getSeats() as $str) {
             $output .= $str == '' ? '-' : $str;

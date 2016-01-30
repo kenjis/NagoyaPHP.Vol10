@@ -73,4 +73,15 @@ class SeatsTest extends \PHPUnit_Framework_TestCase
         ];
         $this->assertEquals($expected, $test);
     }
+
+    /**
+     * @expectedException NagoyaPHP\Vol10\Exception\RuntimeException
+     * @expectedExceptionMessage Can not find empty seat for "B"
+     */
+    public function testProcessStringException()
+    {
+        $obj = new Seats(1);
+        $obj->processString('A');
+        $obj->processString('B');
+    }
 }
