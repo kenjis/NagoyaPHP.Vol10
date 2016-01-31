@@ -6,3 +6,4 @@ http://nabetani.sakura.ne.jp/hena/ord7selectchair/
 
 * https://gist.github.com/ounziw/7348fc9022116d3b5b4c
 * https://github.com/hidenorigoto/Nagoya.Php10
+* https://github.com/longkey1/nagoyaphp-160130-doukaku
